@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" id="root" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="output.css">
+
+    <script>
+        function changeMode() {
+            alert("Button clicked");
+            document.getElementById('root').classList.toggle('dark');
+        }
+    </script>
+</head>
+
+<body class="bg-white text-black min-h-screen transition-all duration-300 dark:bg-slate-900 dark:text-white">
+
+    <button class="border border-slate-800 dark:border-white m-2 p-2 rounded hover:bg-slate-800 hover:text-white"
+        onclick="changeMode()">
+        Toggle Dark Mode
+    </button>
+
+    <div class="p-10">
+        <h1 class="text-4xl">
+            Dark Mode Test with Tailwind CSS
+        </h1>
+
+        <p class="text-2xl mt-2">
+            Code with Vishnu
+        </p>
+    </div>
+
+    <div class="flex m-20 border border-slate-700 p-3 dark:bg-slate-600">
+        <div class="bg-blue-300 size-12 dark:bg-black"></div>
+
+        <p class="text-2xl ml-10 p-2">
+            Box with Dark Mode
+        </p>
+    </div>
+
+</body>
+
+</html>
